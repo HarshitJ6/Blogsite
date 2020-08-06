@@ -1,17 +1,11 @@
-<%-include("partials/header")-%>
-
-
-<h1>COMPOSE</h1>
-
-<form action="/compose" method="post">
-    <label for="newBlog">Title:</label> <br>
-<input id="newBlog" type="text" size="50" class="titlebox" name="newBlog" placeholder="add text...." autocomplete="off"><br>
-<label for="post">Post:</label><br>
-<textarea name="posttext" id="post" class="postbox" cols="50" rows="10"></textarea><br>
-<button name="submit" class="btn btn-primary">Publish</button>
-</form>
-
-
-
-
-<%- include("partials/footer")-%>
+<%- include ('partials/header.ejs')%>
+<div class="box col-lg-4 col-sm-9 col-9 col-md-5">
+  <form action="/compose" method="POST">
+    <label for="title">BLOG TITLE</label>
+    <input type="text" name="title" id="title" required/>
+    <label for="blog">BLOG CONTENT</label>
+    <textarea name="blog" id="" cols="30" rows="5" required></textarea>
+    <button class="btn btn-warning" type="submit">POST</button>
+  </form>
+</div>
+<%- include ('partials/footer.ejs')%>

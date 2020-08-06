@@ -1,0 +1,21 @@
+
+<%- include ('partials/header.ejs')%>
+
+<div class="logout">
+  <p>
+    <%=user%>
+<a href="/logout" class="btn btn-danger btn-sm">LOGOUT</a>
+</p>
+</div>
+
+<%arr.forEach(function(post){%>
+<div class="media post-box">
+    <img src="images/avatar.png" class="align-self-start mr-3" alt="..." width="55">
+    <div class="media-body">
+      <h5 class="mt-0"><%=arr[0].title%></h5>
+      <p><%=arr[0].content%></p>
+    </div>
+  </div>
+<%})%>
+
+<%- include ('partials/footer.ejs')%>

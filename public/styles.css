@@ -1,0 +1,63 @@
+.box{
+    border: 2px solid rgb(147, 173, 204);
+    margin: 5% auto;
+    padding:4%;
+    box-shadow: 1rem 1rem 1rem 0 rgba(221, 221, 230, 0.829);
+    border-radius: 10%;
+    background-color: rgb(252, 252, 252);
+}
+.box label{
+    font-size: 1rem;
+    padding: 5% 0 0 0;
+}
+.box input, .box textarea{
+    width: 100%;
+    margin: 0 0 5% 0;
+    outline: none;
+    border: none;
+    background-color: rgba(221, 221, 230, 0.829);
+    border-left-style:groove;
+}
+.box button{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.box input:focus, .box textarea:focus{
+    border-bottom: 2px solid green;
+}
+.box h3{
+    text-align: center;
+}
+/* //////////////////////////////////////////////////////////////////////////// */
+.post-box{
+    width: 75%;
+    margin: 1% auto;
+    /* border: 2px solid grey; */
+}
+
+/* /////////////////////////// */
+.brand{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6rem;
+}
+hr{
+    width: 40%;
+}
+.home-head{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+.optional{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.logout{
+    margin:0 auto;
+    text-align: center;
+}
+.footer{
+    margin: 0 !important;
+}

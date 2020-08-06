@@ -1,12 +1,21 @@
-<%- include("partials/header")-%>
+<%- include ('partials/header.ejs')-%>
 
-<h1>HOME</h1>
+<div class="home-head">
+<h2>Welcome to BlogSite!</h2>
+<p>Hello visitor! Welcome to the BlogSite . Feel free to read,share and compose your very own blogs. </p>
+<a href="/register" class="btn btn-secondary">REGISTER</a>
+<a href="/login" class="btn btn-success">LOGIN</a>
+</div>
 
+<%arr.forEach(function(post){%>
+  <div class="media post-box">
+      <img src="images/avatar.png" class="align-self-start mr-3" alt="..." width="55">
+      <div class="media-body">
+        <h5 class="mt-0"><%=post.title%></h5>
+        <p><%=post.content%></p>
+      </div>
+    </div>
+    <hr>
+  <%})%>
 
-<p><%=homeContent%></p>
-
-<%  for(let i=0;i< arr.length;i++){ %>
-    <h2><%=arr[i].title%></h2>
-    <p ><%=arr[i].content.substring(0,100)+"..."%><a href="/posts/<%=arr[i]._id%>">  Read more</a></p>
-<%}%>
-<%- include("partials/footer") -%>
+<%- include ('partials/footer.ejs')-%>
